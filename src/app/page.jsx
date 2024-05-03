@@ -53,7 +53,7 @@ const Homepage = () => {
         {/* image */}
         <div className="imgWrap h-1/2 min-h-[min(200px,100vw)] mb-11 lg:m-0 lg:h-full lg:w-1/2 relative flex items-center justify-center">
           <Image
-            src="/profile.png"
+            src="/PersonalPortfolio/profile.png"
             alt=""
             fill
             className="heroImg object-contain lg:p-11 lg:max-h-[450px] lg:inset-auto"
@@ -178,7 +178,7 @@ const Homepage = () => {
         className="experienceContainer relative overflow-x-hidden"
       >
         <Image
-          src="/road.jpg"
+          src="/PersonalPortfolio/road.jpg"
           fill
           alt="bg"
           className="object-cover experienceBg"
@@ -334,7 +334,7 @@ const Homepage = () => {
                 className="relative h-10 w-10 mt-[-5px]"
               >
                 <Image
-                  src="/phone.png"
+                  src="/PersonalPortfolio/phone.png"
                   alt="phone"
                   fill
                   className="object-contain invert"
@@ -353,7 +353,7 @@ const Homepage = () => {
                 className="relative h-10 w-10 mt-[-5px]"
               >
                 <Image
-                  src="/mail.png"
+                  src="/PersonalPortfolio/mail.png"
                   alt="phone"
                   fill
                   className="object-contain invert"
@@ -375,7 +375,7 @@ const Homepage = () => {
                 className="relative h-10 w-10 mt-[-5px]"
               >
                 <Image
-                  src="/blacklinkedin.png"
+                  src="/PersonalPortfolio/blacklinkedin.png"
                   alt="phone"
                   fill
                   className="object-contain invert"

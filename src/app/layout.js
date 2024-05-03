@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link
   rel="icon"
-  href="/profile.png"
+  href="/PersonalPortfolio/profile.png"
   type="png"
 />
       <body className={inter.className}>

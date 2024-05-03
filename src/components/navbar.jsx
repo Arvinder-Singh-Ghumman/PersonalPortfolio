@@ -7,10 +7,10 @@ import NavItem from "./navItem";
 import { motion } from "framer-motion";
 
 const menuItems = [
-  { url: "/", title: "Home" },
-  { url: "/about", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
-  { url: "/#contact", title: "Contact" },
+  { url: "/PersonalPortfolio/", title: "Home" },
+  { url: "/PersonalPortfolio/about", title: "About" },
+  { url: "/PersonalPortfolio/portfolio", title: "Portfolio" },
+  { url: "/PersonalPortfolio/#contact", title: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -87,13 +87,13 @@ export const Navbar = () => {
       {/* social */}
       <div className="socials hidden md:flex gap-11 w-1/3 justify-end pr-11">
         <Link href="https://github.com/Arvinder-Singh-Ghumman">
-          <Image src="/githubnav.png" alt="" width={24} height={24} />
+          <Image src="/PersonalPortfolio/githubnav.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.instagram.com/arvindersinghghumman/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+          <Image src="/PersonalPortfolio/instagram.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/arvindersinghghumman">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <Image src="/PersonalPortfolio/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
 

@@ -43,7 +43,7 @@ const AboutPage = () => {
         </span>
         {/* BIOGRAPHY SIGN SVG*/}
         <div className="relative h-24 w-48 md:2-64 xl:w-72 mt-10">
-          <Image src="/sign.png" fill alt="sign" className="object-contain" />
+          <Image src="/PersonalPortfolio/sign.png" fill alt="sign" className="object-contain" />
         </div>
       </motion.div>
       <Footer/>
