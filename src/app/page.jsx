@@ -10,20 +10,20 @@ import Link from "next/link";
 const Homepage = () => {
   //skills
   const skillsList = [
-    { title: "HTML", img: "/html.png" },
-    { title: "CSS", img: "/css.png" },
-    { title: "JavaScript", img: "/javacsript.png" },
-    { title: "Java", img: "/java.png" },
-    { title: "NodeJs", img: "/node.png" },
-    { title: "ReactJs", img: "/react.png" },
-    { title: "ExpressJs", img: "/express.png" },
-    { title: "NextJs", img: "/next.png" },
-    { title: "SQL", img: "/sql.png" },
-    { title: "MongoDb", img: "/mongo.png" },
-    { title: "Sass", img: "/sass.png" },
-    { title: "Github", img: "/github.png" },
-    { title: "WordPress", img: "/wordpress.png" },
-    { title: "Figma", img: "/figma.png" },
+    { title: "HTML", img: "/PersonalPortfolio/html.png" },
+    { title: "CSS", img: "/PersonalPortfolio/css.png" },
+    { title: "JavaScript", img: "/PersonalPortfolio/javacsript.png" },
+    { title: "Java", img: "/PersonalPortfolio/java.png" },
+    { title: "NodeJs", img: "/PersonalPortfolio/node.png" },
+    { title: "ReactJs", img: "/PersonalPortfolio/react.png" },
+    { title: "ExpressJs", img: "/PersonalPortfolio/express.png" },
+    { title: "NextJs", img: "/PersonalPortfolio/next.png" },
+    { title: "SQL", img: "/PersonalPortfolio/sql.png" },
+    { title: "MongoDb", img: "/PersonalPortfolio/mongo.png" },
+    { title: "Sass", img: "/PersonalPortfolio/sass.png" },
+    { title: "Github", img: "/PersonalPortfolio/github.png" },
+    { title: "WordPress", img: "/PersonalPortfolio/wordpress.png" },
+    { title: "Figma", img: "/PersonalPortfolio/figma.png" },
   ];
 
   const skillRef = useRef();

@@ -7,10 +7,10 @@ import NavItem from "./navItem";
 import { motion } from "framer-motion";
 
 const menuItems = [
-  { url: "/PersonalPortfolio/", title: "Home" },
-  { url: "/PersonalPortfolio/about", title: "About" },
-  { url: "/PersonalPortfolio/portfolio", title: "Portfolio" },
-  { url: "/PersonalPortfolio/#contact", title: "Contact" },
+  { url: "/", title: "Home" },
+  { url: "/about", title: "About" },
+  { url: "/portfolio", title: "Portfolio" },
+  { url: "/#contact", title: "Contact" },
 ];
 
 export const Navbar = () => {
