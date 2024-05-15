@@ -150,6 +150,11 @@
   /* filter: drop-shadow(0 0 10px #01aec9),drop-shadow(0 0 10px #01aec9); */
   animation: borderGlow 2s linear alternate-reverse infinite;
 }
+@media screen and (max-width: 768px) {
+  .contactmeContent{
+    margin: 1rem;
+  }
+}
 
 @keyframes borderGlow {
   0% {

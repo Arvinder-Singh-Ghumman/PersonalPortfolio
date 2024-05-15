@@ -1,10 +1,10 @@
 export const Footer = () => {
   return(
-    <div className="footer w-full h-fit bg-black text-[#6a6a6a] flex flex-col-reverse md:flex-row p-5 lg:px-10 xl:px-15 justify-around">
+    <div className="footer w-full h-fit bg-black text-[#6a6a6a] flex flex-col-reverse md:flex-row p-5 lg:px-10 xl:px-15 justify-center">
       {/* attributions */}
-      <div className="lg:w-1/3">
-        <p className="text-white font-bold">Content used: </p>
-        <ul className="flex flex-wrap gap-4">
+      <div className="lg:w-2/3">
+        <p className="text-white opacity-20 mt-5 font-bold">Content used: </p>
+        <ul className="flex flex-wrap gap-2 md:gap-4">
           <li>https://www.freepik.com</li>
           <li>https://icons8.com</li>
           <li>https://www.vecteezy.com</li>
@@ -12,7 +12,7 @@ export const Footer = () => {
         </ul>
       </div>
       {/* thanking to visit site */}
-      <div className="flex justify-center lg:w-2/3 items-center lg:text-xl text-white font-bold">
+      <div className="flex justify-center lg:w-1/3 items-center lg:text-xl text-white font-bold">
         THANKS FOR VISITING
       </div>
     </div>

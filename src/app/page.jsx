@@ -49,11 +49,12 @@ const Homepage = () => {
       transition={{ duration: 1 }}
     >
       {/* hero container */}
-      <div className="h-full flex flex-col items-stretch lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pb-11">
+      <div className="h-full flex flex-col items-stretch gap-8 md:gap-4 lg:gap-0 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pb-11">
         {/* image */}
         <div className="imgWrap h-1/2 min-h-[min(200px,100vw)] mb-11 lg:m-0 lg:h-full lg:w-1/2 relative flex items-center justify-center">
           <Image
-            src="/PersonalPortfolio/profile.png"
+            // src="/PersonalPortfolio/profile.png"
+            src="/profile.png"
             alt=""
             fill
             className="heroImg object-contain lg:p-11 lg:max-h-[450px] lg:inset-auto"
@@ -67,7 +68,7 @@ const Homepage = () => {
             Hey there! <span className="text-[#01aec9]">Myself</span>
           </p>
           {/* title */}
-          <h1 className="name text-4xl text-[#eeeeee] font-bolo font-bold mt-[-10px] md:text-6xl ">
+          <h1 className="name text-4xl text-[#eeeeee] text-center md:text-left font-bolo font-bold mt-[-10px] md:text-6xl ">
             ARVINDER SINGH
           </h1>
           {/* desc */}
@@ -116,15 +117,15 @@ const Homepage = () => {
               initial={{ x: "-200%" }}
               transition={{ duration: 1, ease: "easeOut" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
-              className="flex gap-4 flex-wrap"
+              className="flex gap-2 md:gap-4 flex-wrap justify-between lg:justify-start"
             >
               {skillsList.map((skill) => {
                 return (
                   <div
-                    className="skills rounded  p-2 text-sm items-center flex justify-center text-center cursor-pointer bg-black text-[#9b9b9b] hover:text-white hover:bg-[#009eb6]"
+                    className="skills rounded p-2 text-sm items-center flex justify-center text-center cursor-pointer bg-black text-[#9b9b9b] hover:text-white hover:bg-[#009eb6]"
                     key={skill.title}
                   >
-                    <div className="containerImg h-[50px] w-[50px] p-5 relative">
+                    <div className="containerImg h-[25px] w-[25px] lg:h-[50px] lg:w-[50px] p-5 relative">
                       <Image
                         src={skill.img}
                         alt=""
@@ -193,7 +194,7 @@ const Homepage = () => {
             initial={{ x: "-200px", opacity: 0 }}
             animate={isExperienceRefInView ? { x: "0", opacity: 1 } : {}}
             transition={{ delay: 0.8, ease: "easeOut", duration: 1 }}
-            className="font-bold text-2xl text-white lg:w-1/2 lg:text-4xl flex justify-center items-center"
+            className="font-bold text-2xl m-11 lg:m-0 text-white lg:w-1/2 lg:text-4xl flex justify-center items-center"
           >
             MY JOURNEY
           </motion.h1>
@@ -205,9 +206,9 @@ const Homepage = () => {
             className="mb-0 pb-0 h-fit"
           >
             {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between">
+            <div className="flex justify-between m-2 sm:m-10 md:m-0">
               {/* LEFT */}
-              <div className="w-1/3 mt-[-50px]">
+              <div className="w-full h-fit md:w-1/2 md:mt-[-50px]">
                 {/* JOB TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   VFX/GFX
@@ -224,7 +225,7 @@ const Homepage = () => {
                 </div>
               </div>
               {/* CENTER */}
-              <div className="w-1/6 flex justify-center">
+              <div className="hidden md:flex justify-center p-4 lg:p-6">
                 {/* LINE */}
                 <div className="w-1 h-full bg-gray-600 rounded relative">
                   {/* LINE CIRCLE */}
@@ -232,14 +233,14 @@ const Homepage = () => {
                 </div>
               </div>
               {/* RIGHT */}
-              <div className="w-1/3 "></div>
+              <div className="w-0 md:w-1/2 "></div>
             </div>
             {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between mt-[-50px]">
+            <div className="flex justify-between md:mt-[-50px] m-2 sm:m-10 md:m-0">
               {/* LEFT */}
-              <div className="w-1/3 "></div>
+              <div className="w-0 md:w-1/2"></div>
               {/* CENTER */}
-              <div className="w-1/6 flex justify-center">
+              <div className="p-4 lg:p-6 hidden md:flex justify-center">
                 {/* LINE */}
                 <div className="w-1 h-full bg-gray-600 rounded relative">
                   {/* LINE CIRCLE */}
@@ -247,7 +248,7 @@ const Homepage = () => {
                 </div>
               </div>
               {/* RIGHT */}
-              <div className="w-1/3 mt-[-50px]">
+              <div className="w-full md:w-1/2 md:mt-[-50px]">
                 {/* JOB TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   Frontend website developer intern
@@ -267,9 +268,9 @@ const Homepage = () => {
               </div>
             </div>
             {/* EXPERIENCE LIST ITEM */}
-            <div className="flex justify-between h-fit mt-[-50px]">
+            <div className="flex justify-between h-fit md:mt-[-50px] m-2 sm:m-10 md:m-0">
               {/* LEFT */}
-              <div className="w-1/3 ">
+              <div className="w-full md:w-1/2 ">
                 {/* JOB TITLE */}
                 <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                   Seasonal Sorting Associate
@@ -286,7 +287,7 @@ const Homepage = () => {
                 </div>
               </div>
               {/* CENTER */}
-              <div className="w-1/6 flex justify-center">
+              <div className="p-4 lg:p-6 hidden md:flex justify-center">
                 {/* LINE */}
                 <div className="w-1 h-full bg-gray-600 rounded relative">
                   {/* LINE CIRCLE */}
@@ -294,7 +295,7 @@ const Homepage = () => {
                 </div>
               </div>
               {/* RIGHT */}
-              <div className="w-1/3 "></div>
+              <div className="w-0 md:w-1/2 "></div>
             </div>
           </motion.div>
         </div>
@@ -304,34 +305,37 @@ const Homepage = () => {
         id="contact"
         className="min-h-screen flex px-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 pb-11"
       >
-        <div className="w-full" ref={contactRef}>
+        <div className="w-full flex flex-col justify-center gap-11" ref={contactRef}>
+          <span>
+
           <motion.h3
             initial={{ opacity: 0, x: "-100px" }}
             animate={isContactRefInView ? { opacity: 1, x: "0" } : ""}
             transition={{ duration: 1, ease: "easeOut" }}
             className="oldTxt text-2xl lg:text-4xl xl:text-6xl font-bold text-slate-500"
             style={{ backgroundImage: "url('/bgBlue.jpg')" }}
-          >
+            >
             Want to <span className="text-[#01aec9]"> Talk</span> to me?
           </motion.h3>
           <p className="text-slate-400 mt-5">
             Feel free to reach out to me directly using any of the following
             methods :{" "}
           </p>
+            </span>
           {/* div for contacts */}
           <motion.div
             initial={{ opacity: "0" }}
             animate={isContactRefInView ? { opacity: 1 } : ""}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="contactmeContent flex flex-col gap-10 text-white p-2 md:p-4 lg:p-16 xl:p-24"
+            className="contactmeContent flex flex-col gap-10 text-white p-8 md:p-12 lg:p-24 xl:p-36"
           >
             {/* phone */}
-            <div className="flex gap-10">
+            <div className="flex gap-5 md:gap-10">
               <motion.div
                 initial={{ opacity: 0, x: "-50px" }}
                 animate={isContactRefInView ? { opacity: 1, x: "0px" } : ""}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
-                className="relative h-10 w-10 mt-[-5px]"
+                className="relative h-7 w-7 md:h-10 md:w-10 mt-[-5px]"
               >
                 <Image
                   src="/PersonalPortfolio/phone.png"
@@ -345,12 +349,12 @@ const Homepage = () => {
               </Link>
             </div>
             {/* mail */}
-            <div className="flex gap-10">
+            <div className="flex gap-5 md:gap-10">
               <motion.div
                 initial={{ opacity: 0, x: "-50px" }}
                 animate={isContactRefInView ? { opacity: 1, x: "0px" } : ""}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.25 }}
-                className="relative h-10 w-10 mt-[-5px]"
+                className="relative h-7 w-7 md:h-10 md:w-10 mt-[-5px]"
               >
                 <Image
                   src="/PersonalPortfolio/mail.png"
@@ -367,12 +371,12 @@ const Homepage = () => {
               </Link>
             </div>
             {/* linked in */}
-            <div className="flex gap-10">
+            <div className="flex gap-5 md:gap-10">
               <motion.div
                 initial={{ opacity: 0, x: "-50px" }}
                 animate={isContactRefInView ? { opacity: 1, x: "0px" } : ""}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-                className="relative h-10 w-10 mt-[-5px]"
+                className="relative h-7 w-7 md:h-10 md:w-10 mt-[-5px]"
               >
                 <Image
                   src="/PersonalPortfolio/blacklinkedin.png"

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "./navItem";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const menuItems = [
   { url: "/", title: "Home" },
@@ -19,21 +19,17 @@ export const Navbar = () => {
   const topVariant = {
     open: {
       rotate: 45,
-      backgroundColor: "rgb(0,0,0)",
     },
     closed: {
       rotate: 0,
-      backgroundColor: "rgb(255,255,255)",
     },
   };
   const bottomVariant = {
     open: {
       rotate: -45,
-      backgroundColor: "rgb(0,0,0)",
     },
     closed: {
       rotate: 0,
-      backgroundColor: "rgb(255,255,255)",
     },
   };
   const centerVariant = {
@@ -104,17 +100,17 @@ export const Navbar = () => {
           onClick={() => setOpen(!open)}
         >
           <motion.div
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-white rounded origin-left"
             variants={topVariant}
             animate={open ? "open" : "closed"}
           ></motion.div>
           <motion.div
-            className="w-10 h-1 bg-black rounded"
+            className="w-10 h-1 bg-white rounded"
             variants={centerVariant}
             animate={open ? "open" : "closed"}
           ></motion.div>
           <motion.div
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-white rounded origin-left"
             variants={bottomVariant}
             animate={open ? "open" : "closed"}
           ></motion.div>
