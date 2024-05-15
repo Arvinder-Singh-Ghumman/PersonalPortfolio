@@ -53,8 +53,8 @@ const Homepage = () => {
         {/* image */}
         <div className="imgWrap h-1/2 min-h-[min(200px,100vw)] mb-11 lg:m-0 lg:h-full lg:w-1/2 relative flex items-center justify-center">
           <Image
-            // src="/PersonalPortfolio/profile.png"
-            src="/profile.png"
+            src="/PersonalPortfolio/profile.png"
+            // src="/profile.png"
             alt=""
             fill
             className="heroImg object-contain lg:p-11 lg:max-h-[450px] lg:inset-auto"
